@@ -1,0 +1,19 @@
+def palindrome():
+    a=int(input("Enter an integer: "))
+    z=str(a)
+    l=len(z)
+    p=0
+    if l%2==0:
+        b=l//2
+    else:
+        b=(l//2)+1
+    for x in range(0,b,1):
+        if z[x]==z[l-1-x]:
+            p=1
+        else:
+            p=0
+            break
+    if p==1:
+        print ("It is a palindrome")
+    else:
+        print ("It is not a palindrome")
